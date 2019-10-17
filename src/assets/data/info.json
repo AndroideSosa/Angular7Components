@@ -1,0 +1,62 @@
+[
+    {
+        "id":1, 
+        "name":"Luis Hernandez",
+        "salary": 1500,
+        "effectiveness": 0.8
+    },
+    {
+        "id":2, 
+        "name":"Martín López",
+        "salary": 2500,
+        "effectiveness": 0.5
+    },
+    {
+        "id":3, 
+        "name":"Juan Rodriguez",
+        "salary": 3500,
+        "effectiveness": 0.9
+    },
+    {
+        "id":4, 
+        "name":"Alejandro Ramírez",
+        "salary": 4500,
+        "effectiveness": 0.75
+    },
+    {
+        "id":5, 
+        "name":"Andrés Castillo",
+        "salary": 5500,
+        "effectiveness": 0.91
+    },
+    {
+        "id":6, 
+        "name":"Hernan Yebra",
+        "salary": 6500,
+        "effectiveness": 0.92
+    },
+    {
+        "id":7, 
+        "name":"Ivan Saucedo",
+        "salary": 7500,
+        "effectiveness": 0.65
+    },
+    {
+        "id":8, 
+        "name":"Monserrat Martínez",
+        "salary": 8500,
+        "effectiveness": 0.78
+    },
+    {
+        "id":9, 
+        "name":"Isabel Lozano",
+        "salary": 9500,
+        "effectiveness": 0.7
+    },
+    {
+        "id":10, 
+        "name":"Rodrigo Rubio",
+        "salary": 10500,
+        "effectiveness": 0.91
+    }
+  ]

@@ -1,0 +1,9 @@
+
+<!--Inicio de estructura html del componente menu-dropdown-->
+<div class="btn-group">
+    <button type="button" class="btn btn-info dropdown-toggle btn-lg" data-toggle="dropdown" (click)="show=!show">Selecciona un componente</button>
+    <div class="dropdown-menu" [ngClass]="{show: show === true}" *ngFor="let componente of componentes | async">
+        <a class="dropdown-item" routerLink="{{componente.route}}">{{componente.name}}</a>
+    </div>
+</div>
+<!--Final de estructura html del componente menu-dropdown-->

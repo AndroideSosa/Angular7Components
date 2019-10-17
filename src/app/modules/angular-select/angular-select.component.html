@@ -1,0 +1,48 @@
+  <app-navbar [titulo]="titulo"></app-navbar>
+    <br>
+<div class="form-row text-center">
+    <!--Inicio de estructura html select básico -->
+      <div class="col-4" >
+        <h2> Select Angular básico</h2>
+          <select class="custom-select" (change)="getValue($event.target.value)">
+              <option hidden [value]="null">Seleccione una opción</option>
+              <option *ngFor="let opcion of opciones$ | async" [value]="opcion.id">{{opcion.name}}</option>
+          </select>
+      </div>
+      <!--Final de estructura html select básico -->
+
+      <!--Inicio de estructura html select básico -->
+      <div class="col-4" >
+          <h2> Select Reactivo con Angular</h2>
+            <select ([ngModel])="tipo" class="custom-select">
+                <option [value]="0">Seleccione una opción</option>
+                <option *ngFor="let opcion of opciones$ | async" [value]="opcion">{{opcion.name}}</option>
+            </select>
+        </div>
+        <!--Final de estructura html select básico -->
+</div>
+  <br>
+  <br>
+   <!--Inicio de estructura div select dependiente -->
+    <div class="form-row text-center">
+         <!--Inicio de estructura primer select dependiente -->
+        <div class="col-6" >
+            <h2> Select Controlador</h2>
+              <select ([ngModel])="tipo" class="custom-select" (change)="getSelectValue($event.target.value)">
+                  <option hidden [value]="0">Seleccione una opción</option>
+                  <option *ngFor="let opcion of opciones$ | async" [value]="opcion.id">{{opcion.name}}</option>
+              </select>
+          </div>
+          <!--Final de estructura primer select dependiente -->
+
+           <!--Inicio de estructura primer select dependiente -->
+        <div class="col-6" >
+            <h2> Select Dependiente</h2>
+              <select ([ngModel])="tipo" class="custom-select" [disabled]="selectActive">
+                  <option [value]="0">Seleccione una opción</option>
+                  <option *ngFor="let opcion of opciones$ | async" [value]="opcion">{{opcion.name}}</option>
+              </select>
+        </div>
+          <!--Final de estructura primer select dependiente -->
+    </div>
+     <!--Final de estructura div select dependiente -->

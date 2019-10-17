@@ -1,0 +1,11 @@
+
+<!--Inicio de estructura html del componente menu-toggle-->
+<div class="container" >
+    <a href="#List-{{ i }}" class="btn btn-info dropdown-toggle btn-lg" data-toggle="collapse">Selecciona un componente</a>
+    <div id="List-{{ i }}" class="collapse">
+      <ul style="list-style: none" *ngFor="let componente of componentes | async">
+        <li routerLink="{{componente.route}}"> {{componente.name}}</li>
+      </ul>
+    </div>
+</div>
+<!--Final de estructura html del componente menu-toggle-->

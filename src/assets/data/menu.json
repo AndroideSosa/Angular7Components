@@ -1,0 +1,14 @@
+[
+    {
+        "route":"/angular-select", 
+        "name":"Angular Select"
+    },
+    {
+        "route":"/angular-react-form", 
+        "name":"Angular React Form"
+    },
+    {
+        "route":"/angular-table", 
+        "name":"Angular Basic Table"
+    }
+  ]

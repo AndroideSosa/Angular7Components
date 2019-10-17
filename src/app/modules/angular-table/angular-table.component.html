@@ -1,0 +1,34 @@
+<app-navbar titulo="Angular Basic Table"></app-navbar>
+<br>
+<div class="form-row text-center">
+    <div class="col-12">
+      <h1>
+        Tabla Básica en Angular Implementando Pipes
+      </h1>
+      <br>
+      <div class="container-fluid">
+          <table id="total votes" class="table table-hover text-centered">
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>Empleado</th>
+                      <th>Salario(CurrencyPipe)</th>
+                      <th>Efectividad(PercentPipe)</th>
+
+                  </tr>
+              </thead>
+              <tbody>
+                 <!--Este pipe (async) nos permite mostrar información que viene de Observables o Promesas.-->
+                  <tr *ngFor="let lenguaje of lenguajes | async">
+                      <td>{{ lenguaje.id }}</td>
+                      <td>{{ lenguaje.name }}</td>
+                      <!--Este pipe transforma números a formato de monedas Locales basado en las normas ISO 4217.-->
+                      <td>{{ lenguaje.salary | currency}}</td>
+                      <!--Este pipe nos convierte números a su forma de porcentaje.-->
+                      <td>{{ lenguaje.effectiveness | percent}}</td>
+                  </tr>
+              </tbody>    
+          </table>
+      </div>
+    </div>
+</div>
